@@ -1,0 +1,222 @@
+% Readline Emacs mode default keyboard shortcut cheat sheet
+%
+% by Peteris Krumins (peter@catonmat.net)
+% http://www.catonmat.net  -  good coders code, great reuse
+%
+% 2007.10.28
+%
+
+\documentclass{article}
+
+\usepackage[left=1.5cm,top=1cm,right=1.5cm,bottom=1cm,nohead,nofoot]{geometry}
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{pdftitle={Readline Emacs Mode Default Keyboard Shortcut Cheat Sheet}}
+\hypersetup{pdfauthor={Peteris Krumins (peter@catonmat.net)}}
+\hypersetup{pdfkeywords={cheat sheet, cheat sheat, cheet sheet, cheet sheat, terminal, command line, readline, read line, emacs, keyboard, shortcut, shortcuts, unix, linux}}
+\hypersetup{pdfsubject={http://www.catonmat.net - good coders code, great reuse}}
+\hypersetup{colorlinks}
+
+\pagestyle{empty}
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+\Large Readline Emacs Editing Mode Cheat Sheet \\
+\Large Default Keyboard Shortcuts for Bash
+\end{center}
+
+\vspace{0.4in}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|p{3.5cm}|p{4cm}|p{10cm}|}
+\hline
+\large\textbf{Shortcut} & \large\textbf{Function Name} & \large\textbf{Description} \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Commands for Moving:}} \\
+\hline
+\textbf{C-a} & beginning-of-line & Move to the beginning of line. \\
+\hline
+\textbf{C-e} & end-of-line & Move to the end of line. \\
+\hline
+\textbf{C-f} & forward-char & Move forward a character. \\
+\hline
+\textbf{C-b} & backward-char & Move back a character. \\
+\hline
+\textbf{M-f} & forward-word & Move forward a word. \\
+\hline
+\textbf{M-b} & backward-word & Move backward a word. \\
+\hline
+\textbf{C-l} & clear-screen & Clear the screen leaving the current line at the top of the screen. \\
+\hline
+(unbound) & redraw-current-line & Refresh the current line. \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Commands for Changing Text:}} \\
+\hline
+\textbf{C-d} & delete-char & Delete one character at point. \\
+\hline
+\textbf{Rubout} & backward-delete-char & Delete one character backward. \\
+\hline
+\textbf{C-q} or \textbf{C-v} & quoted-insert & Quoted insert. \\
+\hline
+\textbf{M-TAB} or \textbf{M-C-i} & tab-insert & Insert a tab character. \\
+\hline
+\textbf{a, b, A, 1, !, ...} & self-insert & Insert the character typed. \\
+\hline
+\textbf{C-t} & transpose-chars & Exchange the char before cursor with the character at cursor. \\
+\hline
+\textbf{M-t} & transpose-words & Exchange the word before cursor with the word at cursor. \\
+\hline
+\textbf{M-u} & upcase-word & Uppercase the current (or following) word. \\
+\hline
+\textbf{M-l} & downcase-word & Lowercase the current (or following) word. \\
+\hline
+\textbf{M-c} & capitalize-word & Capitalize the current (or following) word. \\
+\hline
+(unbound) & overwrite-mode & Toggle overwrite mode. \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Killing and Yanking:}} \\
+\hline
+\textbf{C-k} & kill-line & Kill the text from point to the end of the line. \\
+\hline
+\textbf{C-x Rubout} & backward-kill-line & Kill backward to the beginning of the line. \\
+\hline
+\textbf{C-u} & unix-line-discard & Kill backward from point to the beginning of the line. \\
+\hline
+\textbf{M-d} & kill-word & Kill from point to the end of the current word. \\
+\hline
+\textbf{M-Rubout} & backward-kill-word & Kill the word behind point. \\
+\hline
+\textbf{C-w} & unix-word-rubout & Kill the word behind point, using white space as a word boundary. \\
+\hline
+\textbf{M-\textbackslash} & delete-horizontal-space & Delete all spaces and tabs around point. \\
+\hline
+\textbf{C-y} & yank & Yank the top of the kill ring into the buffer at point. \\
+\hline
+\textbf{M-y} & yank-pop & Rotate the kill ring, and yank the new top. \\
+\hline
+(unbound) & kill-whole-line & Kill all characters on the current line. \\
+(unbound) & kill-region & Kill the text between the point and mark. \\
+(unbound) & copy-region-as-kill & Copy the text in the region to the kill buffer. \\
+(unbound) & copy-backward-word & Copy the word before point to the kill buffer. \\
+(unbound) & copy-forward-word & Copy the word following point to the kill buffer. \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Keyboard Macros:}} \\
+\hline
+\textbf{C-x (} & start-kbd-macro & Begin saving the chars typed into the current keyboard macro. \\
+\hline
+\textbf{C-x )} & end-kbd-macro & End saving the chars typed into the current keyboard macro. \\
+\hline
+\textbf{C-x e} & call-last-kbd-macro & Re-execute the last keyboard macro defined. \\
+\hline
+\end{tabular}
+
+\vfill
+
+\framebox{\parbox{4.5in}{
+A cheat sheet by \textbf{Peteris Krumins} (peter@catonmat.net), 2007.
+
+\href{http://www.catonmat.net}{http://www.catonmat.net} - good coders code, great reuse
+
+\vspace{2mm}
+\footnotesize{Released under GNU Free Document License.}}}
+
+
+%---------------------------------------------------------------------------
+
+\newpage
+
+\mbox{}
+
+\begin{tabular}{|p{3.5cm}|p{4cm}|p{10cm}|}
+\hline
+\large\textbf{Shortcut} & \large\textbf{Function Name} & \large\textbf{Description} \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Commands for Manipulating the History:}} \\
+\hline
+\textbf{Return} & accept-line & Accept the line regardless of where the cursor is. \\
+\hline
+\textbf{C-p} & previous-history & Fetch the previous command from the history list. \\
+\hline
+\textbf{C-n} & next-history & Fetch the next command from the history list. \\
+\hline
+\textbf{M-\textless} & beginning-of-history & Move to the first line in the history. \\
+\hline
+\textbf{M-\textgreater} & end-of-history & Move to the end of the input history (current line). \\
+\hline
+\textbf{C-r} & reverse-search-history & Search backward starting at the current line (incremental). \\
+\hline
+\textbf{C-s} & forward-search-history & Search forward starting at the current line (incremental). \\
+\hline
+\textbf{M-p} & non-incremental-reverse-search-history & Search backward using non-incremental search. \\
+\hline
+\textbf{M-n} & non-incremental-forward-search-history & Search forward using non-incremental search. \\
+\hline
+\textbf{M-C-y} & yank-nth-arg & Insert the n-th argument to the previous command at point. \\
+\hline
+\textbf{M-.} or \textbf{M-\_}& yank-last-arg & Insert the last argument to the previous command. \\
+\hline
+(unbound) & history-search-backward & Search forward for a string between start of line and point. \\
+(unbound) & history-search-forward &  Search backward for a string between start of line and point. \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Completing:}} \\
+\hline
+\textbf{TAB} & complete & Attempt to perform completion on the text before point. \\
+\hline
+\textbf{M-?} & possible-completions & List the possible completions of the text before point. \\
+\hline
+\textbf{M-*} & insert-completions & Insert all completions of the text before point generated by \textbf{possible-completions}. \\
+\hline
+(unbound) & menu-complete & Similar to \textbf{complete} but replaces the word with the first match. \\
+(unbound) & delete-char-or-list & Deletes the car if not at the beginning of line or acts like \textbf{possible-completions} at the end of the line. \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Miscellaneous:}} \\
+\hline
+\textbf{C-x C-r} & re-read-init-file & Read and execute the contents of inputrc file. \\
+\hline
+\textbf{C-g} & abort & Abort the current editing command and ring the terminal's bell. \\
+\hline
+\textbf{M-a, M-b, M-x, ...} & do-uppercase-version & If the metafield char \textbf{x} is lowercase, run the command that is bound to uppercase char. \\
+\hline
+\textbf{ESC} & prefix-meta & Metafy the next character typed. For example, \textbf{ESC-p} is equivalent to \textbf{Meta-p}. \\
+\hline
+\textbf{C-\_} or \textbf{C-x C-u}& undo & Incremental undo, separately remembered for each line. \\
+\hline
+\textbf{M-r} & revert-line & Undo all changes made to this line. \\
+\hline
+\textbf{M-\&} & tilde-expand & Perform tilde expansion on the current word. \\
+\hline
+\textbf{C-@} or \textbf{M-{\textless}space{\textgreater}}& set-mark & Set the mark to the point. \\
+\hline
+\textbf{C-x C-x} & exchange-point-and-mark & Swap the point with the mark. \\
+\hline
+\textbf{C-]} & character-search & Move to the next occurance of current character under cursor. \\
+\hline
+\textbf{M-C-]} & character-search-backward & Move to the previous occurrence of current character under cursor. \\
+\hline
+\textbf{M-\#} & insert-comment & Without argument line is commented, with argument uncommented (if it was commented). \\
+\hline
+\textbf{C-e} & emacs-editing-mode & When in \textbf{vi} mode, switch to \textbf{emacs} mode. \\
+\hline
+\textbf{M-C-j} & vi-editing-mode & When in \textbf{emacs} mode, switch to \textbf{vi} mode. \\
+\hline
+\textbf{M-0, M-1, ..., M--} & digit-argument & Specify the digit to the argument. \textbf{M--} starts a negative argument. \\
+\hline
+(unbound) & dump-functions & Print all of the functions and their key bindings. \\
+(unbound) & dump-variables & Print all of the settable variables and their values. \\
+(unbound) & dump-macros & Print all of the key sequences bound to macros. \\
+(unbound) & universal-argument & Either sets argument or multiplies the current argument by 4. \\
+\hline
+\end{tabular}
+
+\vfill
+
+\framebox{\parbox{5in}{
+A cheat sheet by \textbf{Peteris Krumins} (peter@catonmat.net), 2007.
+
+\href{http://www.catonmat.net}{http://www.catonmat.net} - good coders code, great reuse}}
+
+\end{document}
+
