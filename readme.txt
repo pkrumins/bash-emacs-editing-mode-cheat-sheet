@@ -1,4 +1,4 @@
-Bourne again shell (bash) has two input editing modes - emacs and vim. This is
+Bourne again shell (bash) has two input editing modes - emacs and vi. This is
 emacs editing mode cheat sheet. It lists all the keyboard shortcuts available
 in emacs mode. It will make you much more productive in the shell.
 
